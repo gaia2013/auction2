@@ -17,3 +17,9 @@
 <p>
   <b><%= image_tag @item.image_url %></b>
 </p>
+
+<p>
+  <%= link_to "編集", edit_item_path(@item) %>
+  <%= link_to "削除", item_path(@item), method: :delete, data: {confirm: '削除してよろしいですか？'} %>
+</p>
+
