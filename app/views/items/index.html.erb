@@ -1,7 +1,8 @@
 <h1>出品商品一覧</h1>
 <ul>
-  
   <% @items.each do |item| %>
     <li><%= link_to item.name, item %></li>
   <% end %>
 </ul>
+
+<%= link_to  "出品する", new_item_path %>
